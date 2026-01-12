@@ -1,10 +1,6 @@
 <div class="ctyLP" dir="rtl" aria-label="Landing Page">
 
-
     <style>
-
-
-
         /* EasyOrders Isolation Reset */
         .ctyLP, .ctyLP * {
             box-sizing: border-box;
@@ -16,6 +12,24 @@
             display: block;
             font-family: "Cairo",Tahoma,Arial,sans-serif;
             color: #F7F7FB;
+            /* --- CSS Variables & Basics --- */
+            --bg: #070A12;
+            --stroke: rgba(255,255,255,.12);
+            --text: #F7F7FB;
+            --muted: rgba(247,247,251,.72);
+            --brand: #AF4977;
+            --brand2: #8f2f5f;
+            --shadow: 0 18px 60px rgba(0,0,0,.45);
+            --glass: rgba(255,255,255,.04);
+            --glass2: rgba(255,255,255,.06);
+            background: linear-gradient(180deg, #050714 0%, #070A12 60%, #050714 100%);
+            /* التعديل الأول: إلغاء الفراغ السفلي */
+            padding: 18px 12px 0px;
+            border-radius: 18px;
+            overflow: hidden;
+            line-height: 1.5;
+            position: relative;
+            width: 100% !important;
         }
 
             .ctyLP * {
@@ -43,11 +57,11 @@
                 display: flex;
                 cursor: pointer;
             }
-.ctyLP{ width:100% !important; }
-.ctyWrap{ max-width:1100px; margin:0 auto; }
 
-
-
+        .ctyWrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
 
         /* 👑 White text + Royal gold halo */
         .ctyBrideHeadline {
@@ -105,46 +119,6 @@
             line-height: 1.35;
             margin-top: 4px;
             text-shadow: 0 0 4px rgba(252,211,77,.25), 0 8px 20px rgba(0,0,0,.45);
-        }
-
-        
-
-
-               
-
-        /* --- CSS Variables & Basics --- */
-        .ctyLP {
-            --bg: #070A12;
-            --stroke: rgba(255,255,255,.12);
-            --text: #F7F7FB;
-            --muted: rgba(247,247,251,.72);
-            --brand: #AF4977;
-            --brand2: #8f2f5f;
-            --shadow: 0 18px 60px rgba(0,0,0,.45);
-            --glass: rgba(255,255,255,.04);
-            --glass2: rgba(255,255,255,.06);
-            font-family: "Cairo", Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text);
-            background: linear-gradient(180deg, #050714 0%, #070A12 60%, #050714 100%);
-            padding: 18px 12px 0px !important;
-            overflow: hidden;
-            border-radius: 18px;
-            overflow: hidden;
-            line-height: 1.5;
-            position: relative;
-        }
-
-            .ctyLP * {
-                box-sizing: border-box
-            }
-
-        .ctyWrap {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .ctyLP img {
-            display: block
         }
 
         /* ✅ Reduced Motion */
@@ -1084,6 +1058,7 @@
             opacity: .22;
         }
 
+        /* التعديل الثاني: الزرار لازق تحت */
         .ctySticky {
             position: sticky;
             bottom: 0px;
@@ -1093,7 +1068,7 @@
             border-radius: 15px 15px 0 0;
             margin-top: 0px;
             border: 1px solid var(--stroke);
-            border-bottom: none; /* إضافة اختيارية لشكل أنظف */
+            border-bottom: none;
             z-index: 999;
             display: flex;
             justify-content: space-between;
@@ -1480,8 +1455,6 @@
 
 
 
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
-
                             <div class="giftCard">
                                 <div class="giftImg">
                                     <img src="https://i.postimg.cc/65SZrLHr/0i-IRFR8.webp" alt="img">
@@ -1507,9 +1480,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
 
                             <div class="giftCard">
                                 <div class="giftImg">
@@ -1538,9 +1508,6 @@
                                 </div>
                             </div>
 
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
-
                             <div class="giftCard">
                                 <div class="giftImg">
                                     <img src="https://i.postimg.cc/xdgTR90h/1.webp">
@@ -1566,9 +1533,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
 
                             <div class="giftCard">
                                 <div class="giftImg">
@@ -1596,9 +1560,6 @@
                                 </div>
                             </div>
 
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
-
                             <div class="giftCard">
                                 <div class="giftImg">
                                     <img src="https://i.postimg.cc/4dL85LGZ/ng_BOLOml_BJn_HWEDe_Cn833Cu_Lo_Asbm7j_Mvzp_So_O5T.png">
@@ -1624,9 +1585,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
 
                             <div class="giftCard">
                                 <div class="giftImg">
@@ -1654,9 +1612,6 @@
                                 </div>
                             </div>
 
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
-
                             <div class="giftCard">
                                 <div class="giftImg">
                                     <img src="https://i.postimg.cc/2jXpxVnq/531693839-17867855868428245-3148734265417373891-n.webp">
@@ -1682,9 +1637,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
 
                             <div class="giftCard">
                                 <div class="giftImg">
@@ -1712,9 +1664,6 @@
                                 </div>
                             </div>
 
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
-
                             <div class="giftCard">
                                 <div class="giftImg">
                                     <img src="https://i.postimg.cc/MZY0kQ9Q/d1c3af4a-d308-485d-96b0-8ee2bddfd1b7-1000x1000-5Ph-SWX2nn-DHwg-KRi-KLJb9gtna65Cd-XGm-JZCdy5R5.webp">
@@ -1734,15 +1683,12 @@
                                                 <span class="pChev">⌄</span>
                                             </summary>
                                             <div class="pBody">
-                                                صابونة كينتا تعمل على تنظيف البشرة بلطف وتفتيحها تدريجيًا، تساعد على تقليل الاسمرار في المناطق الداكنة، وتهدّئ البشرة مع تركها ناعمة ومنتعشة بعد كل استخدام.
+                                                صابونة كينتا تعمل على تنظيف البشرة بلطف وتفتيحها تدريجيًا، يساعد على تقليل الاسمرار في المناطق الداكنة، وتهدّئ البشرة مع تركها ناعمة ومنتعشة بعد كل استخدام.
                                             </div>
                                         </details>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- هنا نهاية الكود -->
-                            <!--عشان تضيف منتج جديد انسحخ الكود اللي تحت ده كله وكرره في كل مره عاوز تضيف فيها منتج -->
 
                             <div class="giftCard">
                                 <div class="giftImg">
@@ -1770,31 +1716,7 @@
                                 </div>
                             </div>
 
-                            <!-- هنا نهاية الكود -->
-
-
-
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         <div class="totalBox" style="background:rgba(175,73,119,.15); border:1px solid rgba(175,73,119,.4);"><div>إجمالي قيمة المنتجات</div><div class="v">8,450 جنيه</div></div>
                     </div>
@@ -1835,7 +1757,7 @@
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">🎀</div><div><b>تغليف هدية فخم</b><span>تغليف يحافظ على المنتجات ويليق ببوكس “عروسة” فعلاً.</span></div></div>
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">🚚</div><div><b>متابعة لحد باب البيت</b><span>متابعة واتساب خطوة بخطوة لحد ما الشحنة توصل.</span></div></div>
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">🧾</div><div><b>سياسات مباشرة</b><span>من البداية كل حاجة مكتوبة: ديبوزت/توصيل/حلول.</span></div></div>
-                    <div class="ctyWhyCard"><div class="ctyWhyIcon">👑</div><div><b>بوكس جاهز بدل اللف</b><span>توفير وقت ومجهود… لأن الروتين معمول ومتظبط.</span></div></div>
+                    <div class="ctyWhyCard"><div class="ctyWhyIcon">👑</div><div><b>بوكس جاهز بدل اللف</b><span>توفير وقت وتجهيز… لأن الروتين معمول ومتظبط.</span></div></div>
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">🧴</div><div><b>اختيار السيرم حسب احتياجك</b><span>اختاري بنفسك أو سيبينا نرشحلك الأنسب بسرعة.</span></div></div>
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">🎁</div><div><b>هدايا بقيمة فعلية</b><span>مش “مجاني” وخلاص… قيمة واضحة تزود إحساس الصفقة.</span></div></div>
                     <div class="ctyWhyCard"><div class="ctyWhyIcon">💬</div><div><b>دعم سريع</b><span>قبل وبعد الطلب… ردود واضحة ومباشرة على واتساب.</span></div></div>
@@ -1913,7 +1835,4 @@
     <div id="lb10" class="ctyLightbox"><a class="lbBg" href="#top"></a><div class="lbBox"><a class="lbClose" href="#top">✕</a><img src="IMG_10"></div></div>
     <div id="lb11" class="ctyLightbox"><a class="lbBg" href="#top"></a><div class="lbBox"><a class="lbClose" href="#top">✕</a><img src="IMG_11"></div></div>
     <div id="lb12" class="ctyLightbox"><a class="lbBg" href="#top"></a><div class="lbBox"><a class="lbClose" href="#top">✕</a><img src="IMG_12"></div></div>
-
-  
-
 </div>
