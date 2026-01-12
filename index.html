@@ -1350,9 +1350,8 @@
 
 
 
-
         /* =========================
-   VALUE COMPARISON – BETTER READABILITY
+   VALUE COMPARISON – FINAL PREMIUM STYLE
    ========================= */
 
         /* عنوان القسم */
@@ -1367,16 +1366,48 @@
             opacity: .85;
         }
 
-        /* كروت المقارنة */
-        .ctyCmpCard {
-            padding: 18px;
+        /* الكونتينر – جنب بعض */
+        .ctyCompare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            align-items: stretch;
         }
 
-            /* العنوان داخل كل كارت */
+        /* موبايل: تحت بعض */
+        @media(max-width:700px) {
+            .ctyCompare {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* كارت المقارنة */
+        .ctyCmpCard {
+            padding: 18px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,.12);
+            background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+            position: relative;
+        }
+
+            /* التاج */
+            .ctyCmpCard .tag {
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                font-size: 12px;
+                font-weight: 800;
+                padding: 6px 12px;
+                border-radius: 999px;
+                background: rgba(255,255,255,.08);
+                border: 1px solid rgba(255,255,255,.18);
+            }
+
+            /* العنوان */
             .ctyCmpCard h3 {
                 font-size: 16px;
                 font-weight: 900;
-                margin: 6px 0 12px;
+                margin: 36px 0 12px;
                 line-height: 1.4;
             }
 
@@ -1392,18 +1423,22 @@
                 font-size: 14px;
                 line-height: 1.75;
                 color: rgba(255,255,255,.9);
-                position: relative;
             }
 
-                /* نقطة توضيحية بدل شكل bullet العادي */
                 .ctyCmpCard li::marker {
                     color: #fcd34d;
                 }
 
             /* السعر */
             .ctyCmpCard .price {
-                margin-top: 14px;
+                margin-top: 16px;
                 padding: 12px 14px;
+                border-radius: 14px;
+                background: rgba(255,255,255,.06);
+                border: 1px solid rgba(255,255,255,.12);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 font-size: 14px;
             }
 
@@ -1417,28 +1452,22 @@
                     font-weight: 900;
                 }
 
-            /* التاج (تدوير / البوكس) */
-            .ctyCmpCard .tag {
-                font-size: 12px;
-                font-weight: 800;
-                padding: 6px 12px;
-                border-radius: 999px;
-            }
-
-        /* كارت البوكس – إبراز أقوى */
+        /* كارت البوكس – إبراز */
         .ctyCmpGood {
-            box-shadow: 0 0 0 1px rgba(245,158,11,.25), 0 18px 45px rgba(245,158,11,.18);
+            box-shadow: 0 0 0 1px rgba(245,158,11,.28), 0 18px 45px rgba(245,158,11,.18);
         }
 
-            .ctyCmpGood h3 {
-                color: #fff;
+            .ctyCmpGood .tag {
+                background: rgba(245,158,11,.15);
+                border-color: rgba(245,158,11,.35);
+                color: #fcd34d;
             }
 
             .ctyCmpGood li {
                 color: rgba(255,255,255,.95);
             }
 
-        /* موبايل – تكبير شوية */
+        /* موبايل تحسين الخط */
         @media(max-width:600px) {
             .ctyCmpCard h3 {
                 font-size: 17px;
@@ -1452,6 +1481,7 @@
                 font-size: 17px;
             }
         }
+
 
 
         /* =========================
