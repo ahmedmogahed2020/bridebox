@@ -1348,293 +1348,324 @@
         }
 
 
+
+
+
         /* =========================
-   PREMIUM ADD-ONS (NO JS)
+   VALUE COMPARISON – BETTER READABILITY
    ========================= */
 
-        /* 1) Premium section container */
-        .ctyPremiumBox {
-            border: 1px solid rgba(255,255,255,.10);
-            background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-            border-radius: 18px;
-            padding: 14px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 18px 55px rgba(0,0,0,.30);
+        /* عنوان القسم */
+        .ctySecHead b {
+            font-size: 17px;
+            font-weight: 900;
+            letter-spacing: .2px;
         }
 
-            .ctyPremiumBox::before {
-                content: "";
-                position: absolute;
-                inset: -2px;
-                background: conic-gradient(from 180deg, rgba(255,255,255,0) 0%, rgba(245,158,11,.55) 18%, rgba(175,73,119,.70) 35%, rgba(255,255,255,.18) 52%, rgba(245,158,11,.45) 70%, rgba(255,255,255,0) 100% );
-                opacity: .45;
-                filter: blur(.6px);
-                z-index: -1;
-                -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                padding: 2px;
-                border-radius: 20px;
-                animation: ctyRing 7.5s linear infinite;
+        .ctySecHead span {
+            font-size: 13px;
+            opacity: .85;
+        }
+
+        /* كروت المقارنة */
+        .ctyCmpCard {
+            padding: 18px;
+        }
+
+            /* العنوان داخل كل كارت */
+            .ctyCmpCard h3 {
+                font-size: 16px;
+                font-weight: 900;
+                margin: 6px 0 12px;
+                line-height: 1.4;
             }
 
-        /* 2) “Decision Helper” — 3 reasons row */
+            /* القائمة */
+            .ctyCmpCard ul {
+                display: grid;
+                gap: 10px;
+                padding: 0 20px 0 0;
+                margin: 0;
+            }
+
+            .ctyCmpCard li {
+                font-size: 14px;
+                line-height: 1.75;
+                color: rgba(255,255,255,.9);
+                position: relative;
+            }
+
+                /* نقطة توضيحية بدل شكل bullet العادي */
+                .ctyCmpCard li::marker {
+                    color: #fcd34d;
+                }
+
+            /* السعر */
+            .ctyCmpCard .price {
+                margin-top: 14px;
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+
+                .ctyCmpCard .price span:first-child {
+                    font-size: 13px;
+                    opacity: .9;
+                }
+
+                .ctyCmpCard .price .v {
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+
+            /* التاج (تدوير / البوكس) */
+            .ctyCmpCard .tag {
+                font-size: 12px;
+                font-weight: 800;
+                padding: 6px 12px;
+                border-radius: 999px;
+            }
+
+        /* كارت البوكس – إبراز أقوى */
+        .ctyCmpGood {
+            box-shadow: 0 0 0 1px rgba(245,158,11,.25), 0 18px 45px rgba(245,158,11,.18);
+        }
+
+            .ctyCmpGood h3 {
+                color: #fff;
+            }
+
+            .ctyCmpGood li {
+                color: rgba(255,255,255,.95);
+            }
+
+        /* موبايل – تكبير شوية */
+        @media(max-width:600px) {
+            .ctyCmpCard h3 {
+                font-size: 17px;
+            }
+
+            .ctyCmpCard li {
+                font-size: 14.5px;
+            }
+
+            .ctyCmpCard .price .v {
+                font-size: 17px;
+            }
+        }
+
+
+        /* =========================
+   ROUTINE TIMELINE – PREMIUM STYLE
+   ========================= */
+
+        /* عنوان القسم */
+        .ctySecHead b {
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: .2px;
+        }
+
+        .ctySecHead span {
+            font-size: 13px;
+            opacity: .85;
+        }
+
+        /* الكونتينر */
+        .ctyTimeline {
+            margin-top: 12px;
+            display: grid;
+            gap: 14px;
+        }
+
+        /* كل خطوة */
+        .ctyStep {
+            padding: 16px;
+            border-radius: 18px;
+            background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
+            border: 1px solid rgba(255,255,255,.12);
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+            /* رقم الخطوة */
+            .ctyStep .n {
+                width: 42px;
+                height: 42px;
+                border-radius: 14px;
+                font-size: 16px;
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background: linear-gradient(135deg, rgba(245,158,11,.35), rgba(175,73,119,.55));
+                box-shadow: 0 8px 22px rgba(245,158,11,.35);
+                flex-shrink: 0;
+            }
+
+            /* عنوان الخطوة */
+            .ctyStep b {
+                display: block;
+                font-size: 15.5px;
+                font-weight: 900;
+                margin-bottom: 6px;
+                color: #fff;
+            }
+
+            /* الوصف */
+            .ctyStep span {
+                display: block;
+                font-size: 14px;
+                line-height: 1.75;
+                color: rgba(255,255,255,.9);
+            }
+
+            /* الـ Tip */
+            .ctyStep small {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 6px 12px;
+                font-size: 12.5px;
+                font-weight: 700;
+                border-radius: 999px;
+                background: rgba(255,255,255,.08);
+                border: 1px dashed rgba(255,255,255,.25);
+                color: rgba(255,255,255,.85);
+            }
+
+        /* موبايل */
+        @media(max-width:600px) {
+            .ctyStep {
+                padding: 14px;
+            }
+
+                .ctyStep b {
+                    font-size: 16px;
+                }
+
+                .ctyStep span {
+                    font-size: 14.5px;
+                }
+        }
+
+
+
+        /* =========================
+   PREMIUM DECISION HELPER – POLISHED STYLE
+   ========================= */
+
+        /* عنوان القسم */
+        .ctySecHead b {
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: .25px;
+        }
+
+        .ctySecHead span {
+            font-size: 13px;
+            opacity: .85;
+        }
+
+        /* Grid الأسباب */
         .ctyReasons {
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-            margin-top: 10px;
+            gap: 14px;
+            margin-top: 14px;
         }
 
         @media(max-width:860px) {
             .ctyReasons {
-                grid-template-columns: 1fr
+                grid-template-columns: 1fr;
             }
         }
 
+        /* كل سبب */
         .ctyReason {
-            border: 1px solid rgba(255,255,255,.10);
-            background: rgba(0,0,0,.18);
-            border-radius: 14px;
-            padding: 12px;
+            padding: 16px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,.12);
+            background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
             display: flex;
-            gap: 10px;
+            gap: 14px;
             align-items: flex-start;
+            transition: .25s ease;
         }
 
+            /* Hover خفيف */
+            .ctyReason:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 14px 40px rgba(0,0,0,.35);
+            }
+
+            /* الأيقونة */
             .ctyReason i {
+                width: 44px;
+                height: 44px;
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 font-style: normal;
-                width: 36px;
-                height: 36px;
-                border-radius: 12px;
-                display: grid;
-                place-items: center;
-                background: rgba(175,73,119,.14);
-                border: 1px solid rgba(255,255,255,.12);
+                font-size: 20px;
+                background: linear-gradient(135deg, rgba(245,158,11,.35), rgba(175,73,119,.55));
+                box-shadow: 0 10px 26px rgba(245,158,11,.35);
                 flex-shrink: 0;
             }
 
+            /* العنوان */
             .ctyReason b {
                 display: block;
-                font-size: 13px;
-                margin-bottom: 4px;
+                font-size: 15.5px;
+                font-weight: 900;
+                margin-bottom: 6px;
                 color: #fff;
             }
 
+            /* الوصف */
             .ctyReason span {
-                font-size: 12px;
-                color: rgba(255,255,255,.82);
-                line-height: 1.65;
-            }
-
-        /* 3) Routine Timeline (no JS) */
-        .ctyTimeline {
-            margin-top: 12px;
-            display: grid;
-            gap: 10px;
-        }
-
-        .ctyStep {
-            border: 1px solid rgba(255,255,255,.10);
-            background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-            border-radius: 14px;
-            padding: 12px;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-            .ctyStep .n {
-                width: 34px;
-                height: 34px;
-                border-radius: 12px;
-                display: grid;
-                place-items: center;
-                font-weight: 900;
-                color: #fff;
-                background: rgba(245,158,11,.14);
-                border: 1px solid rgba(245,158,11,.28);
-                flex-shrink: 0;
-            }
-
-            .ctyStep b {
                 display: block;
-                font-size: 13px;
-                color: #fff;
-                margin-bottom: 4px;
-            }
-
-            .ctyStep span {
-                display: block;
-                font-size: 12px;
-                color: rgba(255,255,255,.82);
-                line-height: 1.65;
-            }
-
-            .ctyStep small {
-                display: inline-block;
-                margin-top: 8px;
-                font-size: 11px;
-                color: rgba(255,255,255,.75);
-                border: 1px dashed rgba(255,255,255,.18);
-                border-radius: 999px;
-                padding: 5px 10px;
-            }
-
-        /* 4) Comparison cards */
-        .ctyCompare {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        @media(max-width:700px) {
-            .ctyCompare {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .ctyCmpCard {
-            border: 1px solid rgba(255,255,255,.10);
-            background: rgba(0,0,0,.18);
-            border-radius: 16px;
-            padding: 14px;
-            position: relative;
-            overflow: hidden;
-        }
-
-            .ctyCmpCard .tag {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                font-size: 11px;
-                padding: 5px 10px;
-                border-radius: 999px;
-                border: 1px solid rgba(255,255,255,.14);
-                background: rgba(255,255,255,.06);
-                color: rgba(255,255,255,.90);
-            }
-
-            .ctyCmpCard h3 {
-                margin: 0 0 8px;
                 font-size: 14px;
-                font-weight: 900;
-                padding-left: 86px; /* علشان التاج */
+                line-height: 1.75;
+                color: rgba(255,255,255,.9);
             }
 
-            .ctyCmpCard ul {
-                margin: 0;
-                padding: 0 18px 0 0;
-                display: grid;
-                gap: 6px;
-                font-size: 12px;
-                color: rgba(255,255,255,.84);
-            }
-
-            .ctyCmpCard li {
-                line-height: 1.6
-            }
-
-            .ctyCmpCard .price {
-                margin-top: 10px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 12px;
-                border-radius: 14px;
-                border: 1px solid rgba(255,255,255,.12);
-                background: rgba(175,73,119,.12);
-                font-weight: 900;
-            }
-
-                .ctyCmpCard .price .v {
-                    direction: ltr;
-                    color: #fff;
-                }
-
-        .ctyCmpGood {
-            border-color: rgba(245,158,11,.22)
-        }
-
-            .ctyCmpGood .price {
-                background: rgba(245,158,11,.10);
-                border-color: rgba(245,158,11,.22)
-            }
-
-            .ctyCmpGood .tag {
-                background: rgba(245,158,11,.12);
-                border-color: rgba(245,158,11,.28);
-                color: #fcd34d
-            }
-
-        /* 5) Premium micro interactions (focus/hover) */
-        .ctyBtn, .ctyDrop > summary, .pAcc summary, .sAcc summary {
-            outline: none;
-        }
-
-            .ctyBtn:focus-visible,
-            .ctyDrop > summary:focus-visible,
-            .pAcc summary:focus-visible,
-            .sAcc summary:focus-visible {
-                box-shadow: 0 0 0 3px rgba(245,158,11,.22), 0 0 0 1px rgba(255,255,255,.20);
-            }
-
-        /* 6) Floating WhatsApp (no JS) */
-        .ctyFloatWA {
-            position: fixed;
-            right: 14px;
-            bottom: 118px; /* فوق الشريط السفلي */
-            z-index: 999999;
-        }
-
-            .ctyFloatWA a {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                text-decoration: none;
-                padding: 10px 12px;
-                border-radius: 999px;
-                background: rgba(34,197,94,.16);
-                border: 1px solid rgba(34,197,94,.35);
-                color: #d1fae5;
-                font-weight: 900;
-                box-shadow: 0 18px 55px rgba(0,0,0,.35);
-                backdrop-filter: blur(8px);
-            }
-
-                .ctyFloatWA a i {
-                    font-style: normal;
-                    width: 34px;
-                    height: 34px;
-                    border-radius: 12px;
-                    display: grid;
-                    place-items: center;
-                    background: rgba(34,197,94,.22);
-                    border: 1px solid rgba(34,197,94,.35);
-                }
-
-                .ctyFloatWA a:hover {
-                    transform: translateY(-2px);
-                    transition: .2s
-                }
-
-        /* 7) Premium “Risk Reversal” note */
+        /* صندوق الملاحظة */
         .ctyRiskNote {
-            margin-top: 12px;
-            padding: 12px;
-            border-radius: 14px;
-            border: 1px solid rgba(34,197,94,.20);
-            background: rgba(34,197,94,.10);
-            color: rgba(255,255,255,.90);
-            font-size: 12px;
+            margin-top: 16px;
+            padding: 14px 16px;
+            border-radius: 18px;
+            font-size: 13.5px;
             line-height: 1.8;
+            background: linear-gradient(180deg, rgba(34,197,94,.15), rgba(34,197,94,.08));
+            border: 1px solid rgba(34,197,94,.35);
+            color: rgba(255,255,255,.95);
         }
 
             .ctyRiskNote b {
-                color: #86efac
+                color: #86efac;
+                font-weight: 900;
             }
+
+        /* موبايل */
+        @media(max-width:600px) {
+            .ctyReason {
+                padding: 14px;
+            }
+
+                .ctyReason b {
+                    font-size: 16px;
+                }
+
+                .ctyReason span {
+                    font-size: 14.5px;
+                }
+        }
+
+
+
+
 
 
 
