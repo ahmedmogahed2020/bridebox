@@ -1685,6 +1685,61 @@
                          font-size: 14.5px;
                      }
              }
+
+
+
+
+
+        /* =========================
+   SOFT URGENCY NOTE (NO COUNTER)
+   ========================= */
+        .ctySoftUrgency {
+            margin-top: 12px;
+            padding: 12px 14px;
+            border-radius: 14px;
+            border: 1px solid rgba(245,158,11,.28);
+            background: linear-gradient(90deg, rgba(245,158,11,.12), rgba(175,73,119,.10));
+            color: rgba(255,255,255,.92);
+            font-size: 12.8px;
+            line-height: 1.8;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+            .ctySoftUrgency i {
+                font-style: normal;
+                width: 34px;
+                height: 34px;
+                border-radius: 12px;
+                display: grid;
+                place-items: center;
+                background: rgba(245,158,11,.18);
+                border: 1px solid rgba(245,158,11,.25);
+                flex-shrink: 0;
+            }
+
+            .ctySoftUrgency b {
+                display: block;
+                font-size: 13.2px;
+                font-weight: 900;
+                color: #fff;
+                margin-bottom: 2px;
+            }
+
+            .ctySoftUrgency small {
+                display: block;
+                color: rgba(255,255,255,.80);
+                font-size: 12px;
+                margin-top: 4px;
+                opacity: .95;
+            }
+
+
+
+
+
+
     </style>
 
     <div class="ctyBrideBanner">
@@ -1752,6 +1807,18 @@
                 <div class="ctyValueStack">قيمة البوكس <b>(10,500ج)</b> + قيمة الهدايا <b>(1,200ج)</b> = <span class="k">11,700ج</span><br>إنتِ بتدفعي <b>8,450ج</b> بس… يعني بتاخدي “قيمة أعلى” + توفير وقت وتجهيز.</div>
                 <div class="ctyDepositNote">✅ <b>ديبوزت 500 جنيه</b> لتأكيد الحجز — ويتخصم من الإجمالي عند الاستلام.</div>
                 <div class="ctySteps"><b>خطوات الطلب السريعة:</b><ul><li>1) اختاري <b>سيرم واحد</b> من القسم اللي تحت.</li><li>2) اضغطي <b>اطلب الآن</b>.</li><li>3) في صفحة الطلب اكتبي اسم السيرم في <b>ملاحظات الطلب</b> علشان يتثبت اختيارك ✅</li></ul></div>
+
+                <div class="ctySoftUrgency" role="note" aria-label="تنبيه مهم">
+                    <i>⏳</i>
+                    <div>
+                        <b>ملحوظة مهمة</b>
+                        تجهيز البوكس بياخد وقت + الهدايا محدودة… الطلبات بتتقفل حسب المتاح.
+                        <small>لو ناوية تحجزيه، الأفضل تثبتي الديبوزت دلوقتي.</small>
+                    </div>
+                </div>
+
+
+
                 <div class="ctyCTA">
                     <a href="YOUR_PRODUCT_LINK" class="ctyBtn ctyBtnPrimary">🛒 اطلب الآن</a>
                     <a href="https://wa.me/2010XXXXXXXX" target="_blank" rel="noopener" class="ctyBtn ctyBtnGhost">💬 اختاري السيرم على واتساب</a>
