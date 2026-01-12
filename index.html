@@ -1,14 +1,3 @@
-
-<!-- Floating WhatsApp (ADD) -->
-<div class="ctyFloatWA">
-    <a href="https://wa.me/2010XXXXXXXX" target="_blank" rel="noopener" aria-label="تواصلي واتساب">
-        <i>💬</i>
-        <span>اسألي واتساب بسرعة</span>
-    </a>
-</div>
-
-
-
 <div class="ctyLP" dir="rtl" aria-label="Landing Page">
 
 
@@ -287,7 +276,6 @@
                 border-color: rgba(175,73,119,.55);
                 box-shadow: 0 10px 30px rgba(175,73,119,.18);
             }
-
 
                 .ctyThumb.isActive img {
                     opacity: 1;
@@ -1349,593 +1337,6 @@
             animation-duration: 6.8s;
             font-size: 13px;
         }
-
-
-        /* =========================
-        BIG BRAND ADD-ONS (NO DELETE)
-        ========================= */
-
-        /* Trust bar (sticky top inside section) */
-        .ctyTrustBar {
-            position: sticky;
-            top: 8px;
-            z-index: 9999;
-            margin: 0 0 12px;
-            padding: 10px 10px;
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,.14);
-            background: linear-gradient(180deg, rgba(0,0,0,.38), rgba(255,255,255,.04));
-            backdrop-filter: blur(10px);
-            box-shadow: 0 18px 60px rgba(0,0,0,.35);
-            overflow: hidden;
-            isolation: isolate;
-        }
-
-            .ctyTrustBar::before {
-                content: "";
-                position: absolute;
-                inset: -2px;
-                background: conic-gradient(from 180deg, rgba(255,255,255,0) 0%, rgba(245,158,11,.55) 18%, rgba(175,73,119,.65) 35%, rgba(255,255,255,.18) 52%, rgba(245,158,11,.45) 70%, rgba(255,255,255,0) 100% );
-                filter: blur(.4px);
-                opacity: .65;
-                z-index: -1;
-                -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                padding: 2px;
-                border-radius: 18px;
-                animation: ctyRing 6.5s linear infinite;
-            }
-
-        .ctyTrustInner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .ctyTrustLeft {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            min-width: 0;
-        }
-
-        .ctyTrustLogo {
-            width: 44px;
-            height: 44px;
-            border-radius: 16px;
-            display: grid;
-            place-items: center;
-            background: rgba(255,255,255,.08);
-            border: 1px solid rgba(255,255,255,.14);
-            box-shadow: 0 14px 40px rgba(0,0,0,.35);
-        }
-
-            .ctyTrustLogo span {
-                font-size: 20px;
-                filter: drop-shadow(0 10px 18px rgba(0,0,0,.35))
-            }
-
-        .ctyTrustTxt {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            min-width: 0
-        }
-
-            .ctyTrustTxt b {
-                font-size: 13px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis
-            }
-
-            .ctyTrustTxt small {
-                font-size: 11px;
-                color: rgba(255,255,255,.78);
-                line-height: 1.35
-            }
-
-        .ctyTrustPills {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-            justify-content: flex-end
-        }
-
-        .ctyPill {
-            font-size: 11px;
-            padding: 6px 10px;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,.14);
-            background: rgba(255,255,255,.06);
-            color: rgba(255,255,255,.92);
-            white-space: nowrap;
-        }
-
-            .ctyPill b {
-                color: #fcd34d;
-                font-weight: 900
-            }
-
-        /* Brand stats */
-        .ctyStats {
-            margin-top: 12px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        @media(max-width:860px) {
-            .ctyStats {
-                grid-template-columns: repeat(2,1fr);
-            }
-        }
-
-        .ctyStat {
-            border: 1px solid rgba(255,255,255,.10);
-            background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-            border-radius: 16px;
-            padding: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-            .ctyStat::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.10) 35%, transparent 70%);
-                transform: translateX(-120%);
-                animation: ctyShimmer 5.8s ease-in-out infinite;
-                opacity: .45;
-            }
-
-            .ctyStat i {
-                font-style: normal;
-                width: 38px;
-                height: 38px;
-                border-radius: 14px;
-                display: grid;
-                place-items: center;
-                background: rgba(175,73,119,.14);
-                border: 1px solid rgba(255,255,255,.12);
-                flex-shrink: 0;
-            }
-
-            .ctyStat b {
-                display: block;
-                font-size: 14px;
-                font-weight: 900
-            }
-
-            .ctyStat span {
-                display: block;
-                font-size: 11px;
-                color: rgba(255,255,255,.78);
-                margin-top: 2px
-            }
-
-        /* Premium urgency strip */
-        .ctyUrgency {
-            margin-top: 12px;
-            padding: 12px 12px;
-            border-radius: 16px;
-            border: 1px solid rgba(245,158,11,.22);
-            background: linear-gradient(90deg, rgba(245,158,11,.12), rgba(175,73,119,.10));
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-        }
-
-            .ctyUrgency .uL {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                min-width: 0
-            }
-
-            .ctyUrgency .uIcon {
-                width: 38px;
-                height: 38px;
-                border-radius: 14px;
-                display: grid;
-                place-items: center;
-                background: rgba(245,158,11,.16);
-                border: 1px solid rgba(245,158,11,.25);
-            }
-
-            .ctyUrgency b {
-                font-size: 13px;
-                font-weight: 900
-            }
-
-            .ctyUrgency small {
-                display: block;
-                font-size: 11px;
-                color: rgba(255,255,255,.78);
-                margin-top: 2px
-            }
-
-            .ctyUrgency .uTag {
-                font-size: 11px;
-                padding: 6px 10px;
-                border-radius: 999px;
-                border: 1px solid rgba(255,255,255,.14);
-                background: rgba(0,0,0,.25);
-                color: #fff;
-                white-space: nowrap;
-            }
-
-
-        /* =========================
-             FIX HUGE BOTTOM SPACE (EasyOrders)
-             ========================= */
-
-        /* امنع أي overflow وهمي */
-        .ctyLP {
-            overflow: hidden;
-        }
-
-        /* امنع حساب الـ lightbox في الارتفاع */
-        .ctyLightbox {
-            position: fixed !important;
-            inset: 0;
-            height: 100vh;
-        }
-
-        /* امنع EasyOrders يزود مسافة بعد السكشن */
-        .ctyLP::after {
-            content: none !important;
-        }
-
-        /* حل مشكلة sticky + حساب المساحة */
-        .ctySticky {
-            margin-bottom: 0 !important;
-        }
-
-        /* لو المنصة زودت padding من تحت */
-        .ctyLP {
-            padding-bottom: 18px !important;
-        }
-
-        /* أمان زيادة */
-        body {
-            overflow-x: hidden;
-        }
-
-
-
-
-        /* =========================
-        FIX: Huge Bottom Blank Space (EasyOrders)
-        Cause: position:sticky bottom
-        ========================= */
-
-        /* خلّي الشريط السفلي Fixed بدل Sticky */
-        .ctySticky {
-            position: fixed !important;
-            left: 12px;
-            right: 12px;
-            bottom: 12px;
-            margin: 0 !important;
-            z-index: 99999 !important;
-        }
-
-        /* ادي مساحة في آخر الصفحة علشان الشريط ما يغطّيش المحتوى */
-        .ctyWrap {
-            padding-bottom: 95px !important;
-        }
-
-        /* أمان زيادة لو المنصة بتزود مساحة لوحدها */
-        .ctyLP {
-            padding-bottom: 18px !important;
-        }
-
-        html, body {
-            height: auto !important;
-        }
-
-        .ctyLP {
-            min-height: unset !important;
-        }
-
-
-
-
-        /* =========================
-        PREMIUM ADD-ONS (NO JS)
-        ========================= */
-
-        /* 1) Premium section container */
-        .ctyPremiumBox {
-            border: 1px solid rgba(255,255,255,.10);
-            background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-            border-radius: 18px;
-            padding: 14px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 18px 55px rgba(0,0,0,.30);
-        }
-
-            .ctyPremiumBox::before {
-                content: "";
-                position: absolute;
-                inset: -2px;
-                background: conic-gradient(from 180deg, rgba(255,255,255,0) 0%, rgba(245,158,11,.55) 18%, rgba(175,73,119,.70) 35%, rgba(255,255,255,.18) 52%, rgba(245,158,11,.45) 70%, rgba(255,255,255,0) 100% );
-                opacity: .45;
-                filter: blur(.6px);
-                z-index: -1;
-                -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                padding: 2px;
-                border-radius: 20px;
-                animation: ctyRing 7.5s linear infinite;
-            }
-
-        /* 2) “Decision Helper” — 3 reasons row */
-        .ctyReasons {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        @media(max-width:860px) {
-            .ctyReasons {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .ctyReason {
-            border: 1px solid rgba(255,255,255,.10);
-            background: rgba(0,0,0,.18);
-            border-radius: 14px;
-            padding: 12px;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-            .ctyReason i {
-                font-style: normal;
-                width: 36px;
-                height: 36px;
-                border-radius: 12px;
-                display: grid;
-                place-items: center;
-                background: rgba(175,73,119,.14);
-                border: 1px solid rgba(255,255,255,.12);
-                flex-shrink: 0;
-            }
-
-            .ctyReason b {
-                display: block;
-                font-size: 13px;
-                margin-bottom: 4px;
-                color: #fff;
-            }
-
-            .ctyReason span {
-                font-size: 12px;
-                color: rgba(255,255,255,.82);
-                line-height: 1.65;
-            }
-
-        /* 3) Routine Timeline (no JS) */
-        .ctyTimeline {
-            margin-top: 12px;
-            display: grid;
-            gap: 10px;
-        }
-
-        .ctyStep {
-            border: 1px solid rgba(255,255,255,.10);
-            background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-            border-radius: 14px;
-            padding: 12px;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-            .ctyStep .n {
-                width: 34px;
-                height: 34px;
-                border-radius: 12px;
-                display: grid;
-                place-items: center;
-                font-weight: 900;
-                color: #fff;
-                background: rgba(245,158,11,.14);
-                border: 1px solid rgba(245,158,11,.28);
-                flex-shrink: 0;
-            }
-
-            .ctyStep b {
-                display: block;
-                font-size: 13px;
-                color: #fff;
-                margin-bottom: 4px;
-            }
-
-            .ctyStep span {
-                display: block;
-                font-size: 12px;
-                color: rgba(255,255,255,.82);
-                line-height: 1.65;
-            }
-
-            .ctyStep small {
-                display: inline-block;
-                margin-top: 8px;
-                font-size: 11px;
-                color: rgba(255,255,255,.75);
-                border: 1px dashed rgba(255,255,255,.18);
-                border-radius: 999px;
-                padding: 5px 10px;
-            }
-
-        /* 4) Comparison cards */
-        .ctyCompare {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        @media(max-width:700px) {
-            .ctyCompare {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .ctyCmpCard {
-            border: 1px solid rgba(255,255,255,.10);
-            background: rgba(0,0,0,.18);
-            border-radius: 16px;
-            padding: 14px;
-            position: relative;
-            overflow: hidden;
-        }
-
-            .ctyCmpCard .tag {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                font-size: 11px;
-                padding: 5px 10px;
-                border-radius: 999px;
-                border: 1px solid rgba(255,255,255,.14);
-                background: rgba(255,255,255,.06);
-                color: rgba(255,255,255,.90);
-            }
-
-            .ctyCmpCard h3 {
-                margin: 0 0 8px;
-                font-size: 14px;
-                font-weight: 900;
-                padding-left: 86px; /* علشان التاج */
-            }
-
-            .ctyCmpCard ul {
-                margin: 0;
-                padding: 0 18px 0 0;
-                display: grid;
-                gap: 6px;
-                font-size: 12px;
-                color: rgba(255,255,255,.84);
-            }
-
-            .ctyCmpCard li {
-                line-height: 1.6
-            }
-
-            .ctyCmpCard .price {
-                margin-top: 10px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 12px;
-                border-radius: 14px;
-                border: 1px solid rgba(255,255,255,.12);
-                background: rgba(175,73,119,.12);
-                font-weight: 900;
-            }
-
-                .ctyCmpCard .price .v {
-                    direction: ltr;
-                    color: #fff;
-                }
-
-        .ctyCmpGood {
-            border-color: rgba(245,158,11,.22)
-        }
-
-            .ctyCmpGood .price {
-                background: rgba(245,158,11,.10);
-                border-color: rgba(245,158,11,.22)
-            }
-
-            .ctyCmpGood .tag {
-                background: rgba(245,158,11,.12);
-                border-color: rgba(245,158,11,.28);
-                color: #fcd34d
-            }
-
-        /* 5) Premium micro interactions (focus/hover) */
-        .ctyBtn, .ctyDrop > summary, .pAcc summary, .sAcc summary {
-            outline: none;
-        }
-
-            .ctyBtn:focus-visible,
-            .ctyDrop > summary:focus-visible,
-            .pAcc summary:focus-visible,
-            .sAcc summary:focus-visible {
-                box-shadow: 0 0 0 3px rgba(245,158,11,.22), 0 0 0 1px rgba(255,255,255,.20);
-            }
-
-        /* 6) Floating WhatsApp (no JS) */
-        .ctyFloatWA {
-            position: fixed;
-            right: 14px;
-            bottom: 118px; /* فوق الشريط السفلي */
-            z-index: 999999;
-        }
-
-            .ctyFloatWA a {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                text-decoration: none;
-                padding: 10px 12px;
-                border-radius: 999px;
-                background: rgba(34,197,94,.16);
-                border: 1px solid rgba(34,197,94,.35);
-                color: #d1fae5;
-                font-weight: 900;
-                box-shadow: 0 18px 55px rgba(0,0,0,.35);
-                backdrop-filter: blur(8px);
-            }
-
-                .ctyFloatWA a i {
-                    font-style: normal;
-                    width: 34px;
-                    height: 34px;
-                    border-radius: 12px;
-                    display: grid;
-                    place-items: center;
-                    background: rgba(34,197,94,.22);
-                    border: 1px solid rgba(34,197,94,.35);
-                }
-
-                .ctyFloatWA a:hover {
-                    transform: translateY(-2px);
-                    transition: .2s
-                }
-
-        /* 7) Premium “Risk Reversal” note */
-        .ctyRiskNote {
-            margin-top: 12px;
-            padding: 12px;
-            border-radius: 14px;
-            border: 1px solid rgba(34,197,94,.20);
-            background: rgba(34,197,94,.10);
-            color: rgba(255,255,255,.90);
-            font-size: 12px;
-            line-height: 1.8;
-        }
-
-            .ctyRiskNote b {
-                color: #86efac
-            }
     </style>
 
     <div class="ctyBrideBanner">
@@ -1950,50 +1351,6 @@
         <div class="ctyBrideTag">👑 Premium Bride</div>
     </div>
 
-
-    <!-- =========================
-     BIG BRAND TRUST + STATS (ADD ONLY)
-     ========================= -->
-    <div class="ctyTrustBar" role="note" aria-label="شريط الثقة">
-        <div class="ctyTrustInner">
-            <div class="ctyTrustLeft">
-                <div class="ctyTrustLogo" aria-hidden="true"><span>🛡️</span></div>
-                <div class="ctyTrustTxt">
-                    <b>Center To You • ضمان تجربة راقية</b>
-                    <small>معلومات واضحة + متابعة واتساب + تغليف آمن… علشان تكوني مطمّنة 100%</small>
-                </div>
-            </div>
-            <div class="ctyTrustPills">
-                <span class="ctyPill">✅ فحص قبل الاستلام</span>
-                <span class="ctyPill">🎁 هدايا <b>بقيمة فعلية</b></span>
-                <span class="ctyPill">🚚 توصيل سريع</span>
-                <span class="ctyPill">💬 دعم واتساب</span>
-            </div>
-        </div>
-
-        <div class="ctyStats" aria-label="أرقام تثبت الثقة">
-            <div class="ctyStat"><i>👰‍♀️</i><div><b>+1200</b><span>عروسة جهزت البوكس</span></div></div>
-            <div class="ctyStat"><i>⭐</i><div><b>4.9/5</b><span>رضا العملاء</span></div></div>
-            <div class="ctyStat"><i>⏱️</i><div><b>24–72h</b><span>داخل القاهرة/الجيزة غالبًا</span></div></div>
-            <div class="ctyStat"><i>📦</i><div><b>تغليف بريميوم</b><span>حماية للزجاجي + ترتيب هدية</span></div></div>
-        </div>
-
-        <div class="ctyUrgency" aria-label="شريط الندرة">
-            <div class="uL">
-                <div class="uIcon" aria-hidden="true">⚡</div>
-                <div>
-                    <b>الشحن اليوم للطلبات قبل 5:00 م</b>
-                    <small>الكميات بتتحدّث حسب المخزون—احجزي البوكس بدفعة الديبوزت</small>
-                </div>
-            </div>
-            <span class="uTag">🔥 Limited Stock</span>
-        </div>
-    </div>
-
-
-
-
-
     <div class="ctyWrap" id="top">
         <div class="ctyTop">
             <div class="ctyBrand"><span class="ctyDot"></span> Center To You</div>
@@ -2005,47 +1362,6 @@
         </div>
 
         <div class="ctyHero">
-            <!-- =========================
-            PREMIUM DECISION HELPER (ADD)
-            ========================= -->
-            <div class="ctyPremiumBox" aria-label="مساعدة القرار">
-                <div class="ctySecHead" style="margin:0 0 10px">
-                    <b>💎 ليه البوكس ده “قرار آمن”؟</b>
-                    <span>وقت أقل + قيمة أعلى</span>
-                </div>
-
-                <div class="ctyReasons">
-                    <div class="ctyReason">
-                        <i>🧠</i>
-                        <div>
-                            <b>إحنا شايلين عنك قرار الاختيار</b>
-                            <span>روتين مترتب + أوصاف تحت كل منتج… علشان مفيش لخبطة.</span>
-                        </div>
-                    </div>
-                    <div class="ctyReason">
-                        <i>💰</i>
-                        <div>
-                            <b>قيمة واضحة بالأرقام</b>
-                            <span>بتشوفي إجمالي المنتجات + إجمالي الهدايا… يعني “صفقة” مش كلام.</span>
-                        </div>
-                    </div>
-                    <div class="ctyReason">
-                        <i>🛡️</i>
-                        <div>
-                            <b>طمأنة قبل الشراء</b>
-                            <span>فحص قبل الاستلام + تغليف آمن + متابعة واتساب لحد باب البيت.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ctyRiskNote">
-                    ✅ <b>ملحوظة رايقة:</b> لو محتارة في السيرم، ابعتي نوع بشرتك/شعرك على واتساب… هنرشحلك الأنسب بسرعة بدون لف.
-                </div>
-            </div>
-
-
-
-
             <div class="ctyCard">
                 <div class="ctyMainImg">
                     <a href="#lb1" style="display:block;height:100%"><img src="IMG_1" alt="Box"></a>
@@ -2087,49 +1403,6 @@
         </div>
 
         <div class="ctySerum">
-
-            <!-- =========================
-            ROUTINE TIMELINE (ADD)
-            ========================= -->
-            <div class="ctyPremiumBox" aria-label="روتين استخدام سريع">
-                <div class="ctySecHead" style="margin:0 0 10px">
-                    <b>🗓️ روتين جاهز… “إمشي عليه”</b>
-                    <span>خطوات بسيطة من غير تفكير</span>
-                </div>
-
-                <div class="ctyTimeline">
-                    <div class="ctyStep">
-                        <div class="n">1</div>
-                        <div>
-                            <b>أول أسبوع: ترتيب الروتين</b>
-                            <span>ابدئي بالأساسيات (تنضيف/ترطيب) + منتجات الجسم… هتحسي إن كل حاجة اتلمّت.</span>
-                            <small>💡 Tip: ثبتي مواعيد ثابتة (صباح/ليل)</small>
-                        </div>
-                    </div>
-
-                    <div class="ctyStep">
-                        <div class="n">2</div>
-                        <div>
-                            <b>تاني أسبوع: نعومة وشكل مُرتّب</b>
-                            <span>استخدمي السكراب حسب التعليمات + الترطيب… النتيجة بتبان تدريجي وبشكل أنعم.</span>
-                            <small>✨ Tip: بعد السكراب لازم ترطيب</small>
-                        </div>
-                    </div>
-
-                    <div class="ctyStep">
-                        <div class="n">3</div>
-                        <div>
-                            <b>اختيار السيرم = اللمسة الشخصية</b>
-                            <span>اختاري سيرم واحد يناسب احتياجك… واكتبي اسمه في ملاحظات الطلب علشان يتثبت ✅</span>
-                            <small>📌 Tip: لو ريتنول → استخدام ليلي تدريجي + واقي شمس</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
             <div class="ctyH">✨ اختاري سيرم واحد (إجباري)</div>
             <div class="serumGrid">
                 <label class="serumItem"><div class="sTop"><input type="radio" name="serum" value="اليكسير"> <b>اليكسير</b></div><div class="sAcc"><details><summary><span>📌 وصف السيرم</span><span class="sChev">⌄</span></summary><div class="sBody">غذاء ولمعان للشعر… يخفف الجفاف والهيشان ويساعد في نعومة أسرع مع الاستمرار.</div></details></div></label>
@@ -2570,47 +1843,6 @@
                 </div>
             </div>
 
-
-
-            <!-- =========================
-            VALUE COMPARISON (ADD)
-            ========================= -->
-            <div class="ctyPremiumBox" aria-label="مقارنة القيمة">
-                <div class="ctySecHead" style="margin:0 0 10px">
-                    <b>⚖️ مقارنة سريعة: “تدوير السوق” vs “بوكس جاهز”</b>
-                    <span>تسهيل القرار</span>
-                </div>
-
-                <div class="ctyCompare">
-                    <div class="ctyCmpCard">
-                        <span class="tag">🌀 تدوير</span>
-                        <h3>لو هتشتري كل حاجة لوحدها</h3>
-                        <ul>
-                            <li>وقت أكتر + احتمالية تكرار/نقص</li>
-                            <li>اختيارات كتير = تردد</li>
-                            <li>مش دايمًا تقدري تحسبي القيمة بسهولة</li>
-                            <li>تجربة أقل ترتيبًا</li>
-                        </ul>
-                        <div class="price"><span>التكلفة غالبًا</span><span class="v">≈ 10,500ج +</span></div>
-                    </div>
-
-                    <div class="ctyCmpCard ctyCmpGood">
-                        <span class="tag">👑 البوكس</span>
-                        <h3>صندوق الملكة (جاهز ومُرتّب)</h3>
-                        <ul>
-                            <li>روتين كامل “متظبط” بدون لف</li>
-                            <li>أوصاف واضحة لكل منتج</li>
-                            <li>هدايا بقيمة فعلية مُعلنة</li>
-                            <li>فحص قبل الاستلام + تغليف بريميوم</li>
-                        </ul>
-                        <div class="price"><span>إنتِ بتدفعي</span><span class="v" style="color:#fcd34d">8,450ج</span></div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
             <div class="ctyBox">
                 <div class="ctySecHead"><b>⭐ تقييمات العملاء</b><span>20 تجربة متنوعة</span></div>
                 <div class="ctyReviewsGrid">
@@ -2657,7 +1889,6 @@
     <div id="lb11" class="ctyLightbox"><a class="lbBg" href="#top"></a><div class="lbBox"><a class="lbClose" href="#top">✕</a><img src="IMG_11"></div></div>
     <div id="lb12" class="ctyLightbox"><a class="lbBg" href="#top"></a><div class="lbBox"><a class="lbClose" href="#top">✕</a><img src="IMG_12"></div></div>
 
-   
-
+    <div class="ctyBackTop"><a href="#top">🔝 ارجع لأول الصفحة</a></div>
 
 </div>
